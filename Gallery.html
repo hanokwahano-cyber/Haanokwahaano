@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gallery | Hano Kwa Hano Organization</title>
+
+    <meta name="description"
+        content="View activities, programs and community work by Hano Kwa Hano Organization.">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="header">
+
+        <div class="container nav-container">
+
+            <div class="logo">
+    <img src="/Images/WhatsApp Image 2026-09-19 at 10.54.31 PM 1.jpeg" alt="Hano Kwa Hano Organization Logo">
+    Hano <span>Kwa Hano</span>
+</div>
+
+            <button class="menu-btn" onclick="toggleMenu()">
+                ☰
+            </button>
+
+            <nav id="navMenu">
+
+                <a href="Index.html">Home</a>
+
+                <a href="About.html">About Us</a>
+
+                <a href="Program.html">Programs</a>
+
+                <a href="Gallery.html">Gallery</a>
+
+                <a href="Contact.html">Contact</a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================
+         PAGE HERO
+    ========================== -->
+
+    <section class="page-hero">
+
+        <div class="container">
+
+            <p>OUR ACTIVITIES</p>
+
+            <h1>Photo Gallery</h1>
+
+            <p>
+                A glimpse of our programs, activities and community
+                initiatives.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         GALLERY
+    ========================== -->
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <p>OUR WORK IN PICTURES</p>
+
+                <h2>Community Gallery</h2>
+
+            </div>
+
+
+            <!-- FILTER BUTTONS -->
+
+            <div class="gallery-filters">
+
+                <button
+                    class="filter-btn active"
+                    onclick="filterGallery('all', this)">
+                    All
+                </button>
+
+                <button
+                    class="filter-btn"
+                    onclick="filterGallery('education', this)">
+                    Education
+                </button>
+
+                <button
+                    class="filter-btn"
+                    onclick="filterGallery('community', this)">
+                    Community
+                </button>
+
+                <button
+                    class="filter-btn"
+                    onclick="filterGallery('support', this)">
+                    Support
+                </button>
+
+                <button
+                    class="filter-btn"
+                    onclick="filterGallery('events', this)">
+                    Events
+                </button>
+
+            </div>
+
+
+
+            <!-- PHOTO GRID -->
+
+            <div class="gallery-grid">
+
+
+                <!-- PHOTO 1 -->
+
+                <div class="gallery-item education">
+
+                    <img
+                        src="Images/WhatsApp Image 2026-09-20 at 8.17.26 AM.jpeg"
+                        alt="Education activity"
+                        onclick="openLightbox(this)">
+
+                    <div class="gallery-caption">
+                        <h3>Education Support</h3>
+                        <p>Supporting learning opportunities.</p>
+                    </div>
+
+                </div>
+
+
+
+                <!-- PHOTO 2 -->
+
+                <div class="gallery-item community">
+
+                    <img
+                        src="Images/WhatsApp Image 2026-09-20 at 8.17.15 AM.jpeg"
+                        alt="Community activity"
+                        onclick="openLightbox(this)">
+
+                    <div class="gallery-caption">
+                        <h3>Community Engagement</h3>
+                        <p>Working together with the community.</p>
+                    </div>
+
+                </div>
+
+
+
+                <!-- PHOTO 3 -->
+
+                <div class="gallery-item support">
+
+                    <img
+                        src="Images/WhatsApp Image 2026-09-20 at 8.17.13 AM.jpeg"
+                        alt="Community support activity"
+                        onclick="openLightbox(this)">
+
+                    <div class="gallery-caption">
+                        <h3>Community Support</h3>
+                        <p>Supporting vulnerable people.</p>
+                    </div>
+
+                </div>
+
+
+
+                <!-- PHOTO 4 -->
+
+                <div class="gallery-item education">
+
+                    <img
+                        src="Images/WhatsApp Image 2026-09-20 at 8.48.13 AM.jpeg"
+                        alt="Games and Sports"
+                        onclick="openLightbox(this)">
+
+                    <div class="gallery-caption">
+                        <h3>Games and sports</h3>
+                        <p>Creating opportunities through Skills.</p>
+                    </div>
+
+                </div>
+
+
+
+                <!-- PHOTO 5 -->
+
+                <div class="gallery-item events">
+
+                    <img
+                        src="Images/WhatsApp Image 2026-09-20 at 8.17.07 AM.jpeg"
+                        alt="Community event"
+                        onclick="openLightbox(this)">
+
+                    <div class="gallery-caption">
+                        <h3>Community Events</h3>
+                        <p>Bringing people together.</p>
+                    </div>
+
+                </div>
+
+
+
+                <!-- PHOTO 6 -->
+
+                <div class="gallery-item support">
+
+                    <img
+                        src="Images/WhatsApp Image 2026-09-20 at 8.17.10 AM.jpeg"
+                        alt="Hand making skills"
+                        onclick="openLightbox(this)">
+
+                    <div class="gallery-caption">
+                        <h3>Hand making skills</h3>
+                        <p>Providing people with skils in making paving blocks and tiles, as well as construction skills</p>
+                    </div>
+
+                </div>
+
+
+
+                <!-- PHOTO 7 -->
+
+                <div class="gallery-item community">
+
+                    <img
+                        src="Images/WhatsApp Image 2026-09-20 at 8.17.11 AM.jpeg"
+                        alt="Community development"
+                        onclick="openLightbox(this)">
+
+                    <div class="gallery-caption">
+                        <h3>Community Development</h3>
+                        <p>Building stronger communities.</p>
+                    </div>
+
+                </div>
+
+
+
+                <!-- PHOTO 8 -->
+
+                <div class="gallery-item events">
+
+                    <img
+                        src="Images/WhatsApp Image 2026-09-20 at 8.17.12 AM 1.jpeg"
+                        alt="Organization event"
+                        onclick="openLightbox(this)">
+
+                    <div class="gallery-caption">
+                        <h3>Organization Activities</h3>
+                        <p>Working together for positive change.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         LIGHTBOX
+    ========================== -->
+
+    <div id="lightbox" class="lightbox">
+
+        <button
+            class="lightbox-close"
+            onclick="closeLightbox()">
+            ×
+        </button>
+
+        <img
+            id="lightboxImage"
+            src=""
+            alt="Enlarged gallery image">
+
+    </div>
+
+
+
+    <!-- =========================
+         CALL TO ACTION
+    ========================== -->
+
+    <section class="cta">
+
+        <div class="container">
+
+            <h2>
+                Be Part of Our Journey
+            </h2>
+
+            <p>
+                Our work is made possible through the participation,
+                partnership and support of people who believe in
+                stronger communities.
+            </p>
+
+            <a
+                href="contact.html"
+                class="btn primary-btn">
+                Get Involved
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="container footer-content">
+
+            <div>
+
+                <h3>HANO KWA HANO</h3>
+
+                <p>
+                    Together for a better future.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <p>
+                    © <span id="year"></span>
+                    Hano Kwa Hano Organization.
+                    All rights reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
